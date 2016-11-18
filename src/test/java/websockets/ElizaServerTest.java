@@ -63,7 +63,7 @@ public class ElizaServerTest {
 		client.connectToServer(new Endpoint() {
             @Override
             public void onOpen(Session session, EndpointConfig config) {
-                session.getAsyncRemote().sendText(" Do you think that 'Thor: The Dark World' is the worst movie of MCU?");
+                session.getAsyncRemote().sendText(" Who is your favourite Inhuman?");
                 session.addMessageHandler(new MessageHandler.Whole<String>() {
 
                     @Override
